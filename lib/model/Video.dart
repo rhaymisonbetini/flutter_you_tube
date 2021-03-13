@@ -9,10 +9,10 @@ class Video {
 
   factory Video.formJson(Map<String, dynamic> json) {
     return Video(
-      id: json['id']['videoId'],
-      titulo: json['snippet']['title'],
-      imagem: json['snippet']['thumbnails']['high']['url'],
-      canal: json['snippet']['chanellId'],
-    );
+        id: json['id']['videoId'],
+        titulo: json['snippet']['title'],
+        imagem: json['snippet']['thumbnails']['high']['url'],
+        canal: json['snippet']['channelTitle'],
+        descricao: json['snippet']['description']);
   }
 }
